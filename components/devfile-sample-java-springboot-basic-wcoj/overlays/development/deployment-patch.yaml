@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-wcoj
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-unio-tenant/e2e-springboot/devfile-sample-java-springboot-basic-wcoj@sha256:e31ca80482fddb3ba1702918a73337512267d6875a5226a8cd4160c5fd8bcf46
+        name: my-java-springboot
+        resources: {}
+status: {}
